@@ -1,0 +1,19 @@
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-list-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-list-link {
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    &:hover{
+        color: $main-blue-color;
+    }
+}
