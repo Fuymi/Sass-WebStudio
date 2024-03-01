@@ -2,22 +2,23 @@
     display: flex;
     margin-left: auto;
     gap: 50px;
-}
-
-.contacts-list-svg {
-    fill: currentColor;
-}
-
-.contacts-list-link {
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.02em;
-    color: $second-text-color;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    &:hover{
-        color: $main-blue-color;
+    &-svg {
+            fill: currentColor;
+        }
+    &-link {
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        color: $second-text-color;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    
+        &:hover {
+            color: $main-blue-color;
+        }
     }
 }
+
+
 

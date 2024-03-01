@@ -1,12 +1,13 @@
 .nav-list {
     display: flex;
     gap: 50px;
+    &-item {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
 }
 
-.nav-list-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
+
 
 .nav-list-link {
     font-weight: 500;
