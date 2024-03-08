@@ -58,7 +58,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: rgba(175, 177, 184, 1);
+        color: $portfolio-icon;
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -66,8 +66,8 @@
             background-color: $main-blue-color;
             color: $main-white-color;
         }
-        &-svg {
-            fill: currentColor;
         }
+     &-svg {
+         fill: currentColor;
+     }
     }
-}

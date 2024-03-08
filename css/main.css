@@ -615,6 +615,7 @@ input:focus + svg {
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
 }
 .portfolio-list-link:hover .portfolio-list-subtext {
   -webkit-transform: translateY(0);
@@ -732,7 +733,7 @@ input:focus + svg {
   background-color: rgb(33, 150, 243);
   color: rgb(255, 255, 255);
 }
-.team-social-list-link-svg {
+.team-social-list-svg {
   fill: currentColor;
 }
 
