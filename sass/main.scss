@@ -1,15 +1,20 @@
 @import "./abstracts/varibles";
+
 @import "./base/reset";
+
 @import "./components/buttons";
-@import "./components/dropdown";
+@import "./components/contacts";
 @import "./components/container";
+@import "./components/dropdown";
+@import "./components/header";
 @import "./components/logo";
 @import "./components/modal";
-@import "./layout/navigation";
-@import "./layout/hero";
-@import "./layout/features";
-@import "./layout/work";
-@import "./layout/team";
+
 @import "./layout/clients";
-@import "./layout/portfolio";
+@import "./layout/features";
 @import "./layout/footer";
+@import "./layout/hero";
+@import "./layout/navigation";
+@import "./layout/portfolio";
+@import "./layout/team";
+@import "./layout/work";

@@ -1,0 +1,102 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(47, 48, 58, 1);
+    &-logo {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: $main-white-color;
+    }
+    &-text {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 20px;
+    }
+    &-list {
+        display: flex;
+        justify-items: center;
+        gap: 10px;
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            &:hover {
+                background-color: rgba(33, 150, 243, 1);
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+        &-svg {
+            fill: currentColor;
+        }
+    }
+    &-wrap {
+        display: flex;
+        gap: 70px;
+    }
+    &-form {
+        display: flex;
+        gap: 12px;
+        &-title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $main-white-color;
+            padding-bottom: 20px;
+        }
+        &-input {
+            outline: none;
+            background-color: inherit;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            padding: 15px;
+            width: 358px;
+            color: $main-white-color;
+        }
+        &-btn {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.8;
+            letter-spacing: 0.06em;
+            text-align: center;
+            color: $main-white-color;
+            background-color: $main-blue-color;
+            padding: 10px 13px 10px 26px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+        }
+        &-svg {
+            fill: $main-white-color;
+        }
+    }
+}
+
+.location-link {
+    color: $main-white-color;
+}
+
+.address {
+    margin-top: 20px;
+    &-list-link {
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 24px;
+        text-align: left;
+        color: $footer-adress;
+    }
+}

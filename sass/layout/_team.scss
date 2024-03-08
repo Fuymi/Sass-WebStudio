@@ -66,5 +66,8 @@
             background-color: $main-blue-color;
             color: $main-white-color;
         }
+        &-svg {
+            fill: currentColor;
+        }
     }
 }

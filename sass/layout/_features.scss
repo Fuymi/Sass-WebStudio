@@ -30,3 +30,38 @@
     }
 }
 
+.antena::before {
+    content: "";
+    background-image: url("/img/antena.png");
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.clock::before {
+    content: "";
+    background-image: url("/img/clock.png");
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.desctop::before {
+    content: "";
+    background-image: url("/img/desctop.png");
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.astronaft::before {
+    content: "";
+    background-image: url("/img/astronaft.png");
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    margin-bottom: 30px;
+}

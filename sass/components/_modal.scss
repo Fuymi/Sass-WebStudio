@@ -4,9 +4,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 528px;
-    min-height: 300px;
+    min-height: 581px;
+    background-color: $main-white-color;
     padding: 40px;
-    background-color: skyblue;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    &-textarea {
+        resize: none;
+        min-width: 448px;
+        min-height: 138px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 16px;
+        padding-top: 12px;
+    }
+    &-span-privacy {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        padding-left: 8px;
+    }
+    &-privacy-link {
+        color: $main-blue-color;
+        border-bottom: 1px solid $main-blue-color;
+    }
 }
 
 .backdrop {
@@ -16,8 +38,93 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
     &.is-hidden {
             opacity: 0;
             pointer-events: none;
         }
+}
+
+.hero-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: $second-text-color;
+    padding-bottom: 4px;
+}
+
+.hero-modal-title {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.hero-modal-btn-close {
+    position: absolute;
+    padding: 6px;
+    top: 14px;
+    right: 14px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background-color: $main-white-color;
+    &:hover svg {
+        fill: $main-blue-color;
+    }
+}
+
+.modal-lb-span {
+    position: relative;
+}
+
+.modal-lb-svg {
+    fill: currentColor;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    color: $menu-nav;
+}
+
+.hero-modal-lb-check {
+    padding-bottom: 30px;
+    &:hover .input-comment {
+        color: $main-blue-color;
+    }
+}
+
+.hero-modal-lb-btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: $main-white-color;
+    background-color: $main-blue-color;
+    padding: 10px 52px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input-name,.input-tel,.input-email {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+input:focus+svg {
+    fill: $main-blue-color;
+}
+
+.input-tel,.input-email,.input-name,.input-comment,.modal-texarea:focus-within {
+    outline-color: $main-blue-color;
 }
