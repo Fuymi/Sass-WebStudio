@@ -1,39 +1,72 @@
 .section-features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 767px) {
+        padding: 60px 0;
+    }
+    
+    @include tab(768px) {
+        padding: 60px 0;
+    }
+    
+    @include desc(1200px) {
+        padding: 94px 0;
+    }
 }
 
 .features-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+
+    @include tab(768px) {
+        // padding: 60px 0;
+    }
+    
+    @include desc(1200px) {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &-item{
+        max-width: 450px;
+
+        @include tab(768px) {
+            // display: flex;
+            // gap: 50px;
+        }
+        
+        @include desc(1200px) {
+            // display: flex;
+            // gap: 50px;
+        }
+    }
     &-title {
         font-size: 14px;
         font-weight: 700;
         line-height: 1;
         letter-spacing: 0.03em;
         color: $main-text-color;
-    }
-    &-text {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1, 1;
-        letter-spacing: 0.03em;
+        text-align: center;
     }
     &-desc {
         font-size: 14px;
         font-weight: 400;
         line-height: 1, 1;
         letter-spacing: 0.03em;
-        color: var(--second-text-color);
+        color: $second-text-color;
         margin-top: 10px;
     }
 }
 
 .antena::before {
     content: "";
+    background-color: $background-color;
     background-image: url("/img/antena.png");
-    width: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;
@@ -41,8 +74,12 @@
 
 .clock::before {
     content: "";
+    background-color: $background-color;
     background-image: url("/img/clock.png");
-    width: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;
@@ -50,8 +87,12 @@
 
 .desctop::before {
     content: "";
+    background-color: $background-color;
     background-image: url("/img/desctop.png");
-    width: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;
@@ -59,8 +100,12 @@
 
 .astronaft::before {
     content: "";
+    background-color: $background-color;
     background-image: url("/img/astronaft.png");
-    width: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    width: 450px;
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;

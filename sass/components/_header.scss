@@ -1,12 +1,43 @@
 .header{
+    @media screen and (max-width: 767px) {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 16px 0;
+    }
+    
+    @include tab(768px) {
+        display: flex;
+        gap: 50px;
+    }
+    
+    @include desc(1200px) {
+        display: flex;
+        gap: 50px;
+    }
+    background-color: $main-white-color;
     border-bottom: 1px solid $portfolio-line;
     &-logo {
         color: $main-text-color;
+        font-size: 24px;
     }
     &-wrap {
-        display: flex;
-        gap: 93px;
-        align-items: center;
+        @media screen and (max-width: 767px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        @include tab(768px) {
+            // display: flex;
+            // gap: 50px;
+        }
+        
+        @include desc(1200px) {
+            // display: flex;
+            // gap: 50px;
+        }
     }
 }
 

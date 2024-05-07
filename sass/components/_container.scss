@@ -1,6 +1,15 @@
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    
+    @include mob(480px){
+        width: 480px;
+    }
+    @include tab(767px){
+        width: 768px;
+    }
+    @include desc(1199px){
+        width: 1200px;
+    }
 }

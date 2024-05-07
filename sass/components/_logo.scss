@@ -1,9 +1,51 @@
 .logo {
+    @media screen and (max-width: 767px) {
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: $main-blue-color;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @include tab(768px) {
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: $main-blue-color;
+    }
+    
+    @include desc(1200px) {
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: $main-blue-color;
+    }
+}
+
+.footer-logo {
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+    }
+
+    @include tab(768px) {
+        font-size: 26px;
+    }
+
+    @include desc(1200px) {
+        font-size: 26px;
+    }
+
     font-family: Raleway;
-    font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: $main-blue-color;
 }
-

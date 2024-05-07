@@ -1,13 +1,12 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
     background-color: rgba(47, 48, 58, 1);
     &-logo {
         font-size: 26px;
         font-weight: 700;
         line-height: 31px;
         letter-spacing: 0.03em;
-        text-align: left;
+        text-align: center;
         color: $main-white-color;
     }
     &-text {
@@ -16,6 +15,7 @@
         line-height: 16px;
         color: rgba(255, 255, 255, 1);
         margin-bottom: 20px;
+        text-align: center;
     }
     &-list {
         display: flex;
@@ -41,11 +41,35 @@
     }
     &-wrap {
         display: flex;
-        gap: 70px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px 165px;
+        
+        @include tab(768px) {
+            display: flex;
+            gap: 70px;
+        }
+        
+        @include desc(1200px) {
+            display: flex;
+            gap: 70px;
+        }
     }
     &-form {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 12px;
+
+        @include tab(768px) {
+            display: flex;
+            gap: 12px;
+        }
+        
+        @include desc(1200px) {
+            display: flex;
+            gap: 12px;
+        }
         &-title {
             font-size: 14px;
             font-weight: 700;
@@ -54,6 +78,7 @@
             text-transform: uppercase;
             color: $main-white-color;
             padding-bottom: 20px;
+            text-align: center;
         }
         &-input {
             outline: none;
@@ -61,8 +86,28 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 4px;
             padding: 15px;
-            width: 358px;
+            width: 450px;
             color: $main-white-color;
+
+            @include tab(768px) {
+                outline: none;
+                background-color: inherit;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 4px;
+                padding: 15px;
+                width: 358px;
+                color: $main-white-color;
+            }
+            
+            @include desc(1200px) {
+                outline: none;
+                background-color: inherit;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 4px;
+                padding: 15px;
+                width: 358px;
+                color: $main-white-color;
+            }
         }
         &-btn {
             font-family: Roboto;
@@ -71,6 +116,7 @@
             line-height: 1.8;
             letter-spacing: 0.06em;
             text-align: center;
+            width: 200px;
             color: $main-white-color;
             background-color: $main-blue-color;
             padding: 10px 13px 10px 26px;
@@ -78,6 +124,38 @@
             align-items: center;
             gap: 10px;
             border-radius: 4px;
+
+            @include tab(768px) {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.8;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    color: $main-white-color;
+                    background-color: $main-blue-color;
+                    padding: 10px 13px 10px 26px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 4px;
+                }
+            
+                @include desc(1200px) {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1.8;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    color: $main-white-color;
+                    background-color: $main-blue-color;
+                    padding: 10px 13px 10px 26px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 4px;
+                }
         }
         &-svg {
             fill: $main-white-color;
@@ -91,12 +169,24 @@
 
 .address {
     margin-top: 20px;
-    &-list-link {
-        font-weight: 400;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        line-height: 24px;
-        text-align: left;
-        color: $footer-adress;
+    text-align: center;
+    
+    @include tab(768px) {
+        margin-top: 20px;
     }
+    
+    @include desc(1200px) {
+        margin-top: 20px;
+    }
+    &-list{
+        &-link{
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            line-height: 24px;
+            text-align: center;
+            color: $footer-adress;
+        }
+    }
+    
 }

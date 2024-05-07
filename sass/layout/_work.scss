@@ -1,5 +1,10 @@
 .section-work {
-    padding-bottom: 94px;
+    display: none;
+    
+    @include desc(1200px) {
+        display: block;
+        padding-bottom: 94px;
+    }
     &-title {
         font-size: 36px;
         font-weight: 700;
