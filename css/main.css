@@ -108,7 +108,7 @@ body {
 @media screen and (min-width: 1199px) {
   .contacts-list {
     margin-left: auto;
-    gap: 50px;
+    gap: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -178,12 +178,19 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .header-logo {
   color: rgb(0, 0, 0);
   font-size: 24px;
+}
+@media screen and (min-width: 1199px) {
+  .header-logo {
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header-wrap {
@@ -211,6 +218,17 @@ body {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 1199px) {
+  .header-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .curent::after {
   position: absolute;
   content: "";
@@ -218,7 +236,7 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  top: 45px;
+  top: 46px;
   left: 0;
 }
 
@@ -795,6 +813,14 @@ input:focus + svg {
   }
 }
 .footer-form {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 12px;
 }
 @media screen and (min-width: 767px) {
@@ -818,10 +844,10 @@ input:focus + svg {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: rgb(255, 255, 255);
-  padding-bottom: 20px;
+  text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 .footer-form-input {
   outline: none;
