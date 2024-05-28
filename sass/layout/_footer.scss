@@ -16,10 +16,14 @@
         color: rgba(255, 255, 255, 1);
         margin-bottom: 20px;
         text-align: center;
+        
+        @include desc(1199px) {
+            text-align: left;
+        }
     }
     &-list {
         display: flex;
-        justify-items: center;
+        justify-content: center;
         gap: 10px;
         &-link {
             display: flex;
@@ -40,33 +44,29 @@
         }
     }
     &-wrap {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 60px 165px;
         
-        @include tab(768px) {
+        @include tab(767px) {
             display: flex;
-            gap: 70px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px 165px;
         }
         
-        @include desc(1200px) {
+        @include desc(1199px) {
             display: flex;
             gap: 70px;
         }
     }
     &-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // display: block;
         gap: 12px;
 
-        @include tab(768px) {
+        @include tab(767px) {
             display: flex;
             gap: 12px;
         }
         
-        @include desc(1200px) {
+        @include desc(1199px) {
             display: flex;
             gap: 12px;
         }
@@ -89,13 +89,13 @@
             width: 450px;
             color: $main-white-color;
 
-            @include tab(768px) {
+            @include tab(767px) {
                 outline: none;
                 background-color: inherit;
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 border-radius: 4px;
                 padding: 15px;
-                width: 358px;
+                width: 450px;
                 color: $main-white-color;
             }
             
@@ -124,6 +124,8 @@
             align-items: center;
             gap: 10px;
             border-radius: 4px;
+            margin: 0 auto;
+            margin-top: 20px;
 
             @include tab(768px) {
                     font-family: Roboto;
@@ -141,7 +143,7 @@
                     border-radius: 4px;
                 }
             
-                @include desc(1200px) {
+                @include desc(1199px) {
                     font-family: Roboto;
                     font-size: 16px;
                     font-weight: 700;
@@ -150,7 +152,7 @@
                     text-align: center;
                     color: $main-white-color;
                     background-color: $main-blue-color;
-                    padding: 10px 13px 10px 26px;
+                    padding: 10px 13px;
                     display: flex;
                     align-items: center;
                     gap: 10px;
@@ -161,6 +163,17 @@
             fill: $main-white-color;
         }
     }
+    &-social-links{
+        margin-bottom: 60px;
+
+        @include tab(767px) {
+            margin-bottom: 0;
+        }
+        
+        @include desc(1199px) {
+            // margin-bottom: 0;
+        }
+    }
 }
 
 .location-link {
@@ -169,14 +182,17 @@
 
 .address {
     margin-top: 20px;
+    margin-bottom: 60px;
     text-align: center;
     
-    @include tab(768px) {
+    @include tab(767px) {
         margin-top: 20px;
+        margin-bottom: 0;
     }
     
-    @include desc(1200px) {
-        margin-top: 20px;
+    @include desc(1199px) {
+        text-align: left;
+        margin-right: 70px;
     }
     &-list{
         &-link{
@@ -189,4 +205,21 @@
         }
     }
     
+}
+
+.footer-logo {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $main-white-color;
+
+    @include tab(767px) {
+        font-size: 26px;
+    }
+
+    @include desc(1199px) {
+        font-size: 26px;
+    }
 }

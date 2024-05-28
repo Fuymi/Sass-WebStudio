@@ -1,23 +1,24 @@
 .header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: $main-white-color;
+    border-bottom: 1px solid $portfolio-line;
+
     @media screen and (max-width: 767px) {
-        z-index: 1;
-        position: fixed;
-        width: 100%;
-        top: 0;
         padding: 16px 0;
     }
     
-    @include tab(768px) {
+    @include tab(767px) {
+        padding: 21px o;
+    }
+    
+    @include desc(1199px) {
         display: flex;
         gap: 50px;
     }
     
-    @include desc(1200px) {
-        display: flex;
-        gap: 50px;
-    }
-    background-color: $main-white-color;
-    border-bottom: 1px solid $portfolio-line;
     &-logo {
         color: $main-text-color;
         font-size: 24px;
@@ -29,12 +30,13 @@
             justify-content: space-between;
         }
         
-        @include tab(768px) {
-            // display: flex;
-            // gap: 50px;
+        @include tab(767px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         
-        @include desc(1200px) {
+        @include desc(1199px) {
             // display: flex;
             // gap: 50px;
         }
@@ -48,6 +50,6 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    top: 44px;
+    top: 45px;
     left: 0;
 }

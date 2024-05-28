@@ -2,28 +2,53 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    border-radius: 4px;
     transform: translate(-50%, -50%);
-    max-width: 528px;
-    min-height: 581px;
+    max-width: 450px;
     background-color: $main-white-color;
     padding: 40px;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
+
+    @include tab(767px) {
+        max-width: 528px;
+    }
+    
+    @include desc(1199px) {
+        max-width: 528px;
+    }
     &-textarea {
         resize: none;
-        min-width: 448px;
-        min-height: 138px;
+        min-width: 370px;
+        min-height: 120px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         padding-left: 16px;
         padding-top: 12px;
+
+        @include tab(767px) {
+            min-width: 448px;
+            min-height: 138px;
+        }
+        
+        @include desc(1199px) {
+            min-width: 448px;
+            min-height: 138px;
+        }
     }
     &-span-privacy {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
         line-height: 1.7;
         letter-spacing: 0.03em;
-        padding-left: 8px;
+
+        @include tab(767px) {
+            font-size: 14px;
+        }
+        
+        @include desc(1199px) {
+            font-size: 14px;
+        }
     }
     &-privacy-link {
         color: $main-blue-color;
@@ -46,15 +71,11 @@
 }
 
 .hero-modal-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.01em;
     color: $second-text-color;
-    padding-bottom: 4px;
 }
 
 .hero-modal-title {
@@ -94,8 +115,17 @@
     color: $menu-nav;
 }
 
-.hero-modal-lb-check {
-    padding-bottom: 30px;
+.hero-modal-lb{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hero-modal-privacy-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     &:hover .input-comment {
         color: $main-blue-color;
     }
@@ -106,6 +136,7 @@
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    border-radius: 4px;
     color: $main-white-color;
     background-color: $main-blue-color;
     padding: 10px 52px;

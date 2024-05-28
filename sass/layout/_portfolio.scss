@@ -1,18 +1,37 @@
 .section-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+
+    @include tab(767px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    @include desc(1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
     &-item {
-        width: calc((100% - 60px)/3);
+        max-width: 450px;
         border: 1px solid $second-page-container-bg;
         outline: 1px solid $main-white-color;
         position: relative;
         color: inherit;
+        margin-bottom: 30px;
+
+        @include tab(767px) {
+            width: 354px;
+            margin: 0;
+        }
+        
+        @include desc(1199px) {
+            width: calc((100% - 60px)/3);
+        }
     }
     &-title {
         font-size: 18px;

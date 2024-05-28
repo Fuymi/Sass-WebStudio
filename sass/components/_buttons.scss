@@ -1,16 +1,27 @@
 .filters-list {
-    margin-bottom: 50px;
-    gap: 8px;
     display: flex;
-    justify-content: center;
-    &-item {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: 0.03em;
-        text-align: center;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    margin: 60px 0 30px 0;
+    max-width: 326px;
+
+    @include tab(767px) {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin: 60px auto 30px auto;
+        max-width: 575px;
     }
+    
+    @include desc(1199px) {
+        margin-bottom: 50px;
+        gap: 8px;
+        display: flex;
+        justify-content: center;
+    }
+    &-item {}
     &-btn {
+        font-family: Roboto;
         font-size: 16px;
         font-weight: 500;
         line-height: 1;
@@ -19,7 +30,6 @@
         padding: 6px 22px;
         background-color: $background-color;
         color: $menu-nav;
-        padding: 6px 22px;
         border-radius: 4px;
         &:hover {
             background-color: $main-blue-color;

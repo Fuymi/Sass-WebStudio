@@ -3,11 +3,11 @@
     background-color: $background-color;
 
     
-    @include tab(768px) {
+    @include tab(767px) {
         padding: 94px 0;
     }
     
-    @include desc(1200px) {
+    @include desc(1199px) {
         padding: 94px 0;
     }
     &-title {
@@ -18,103 +18,100 @@
         text-align: center;
         margin-bottom: 50px;
 
-        @include tab(768px) {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: 0.03em;
-            text-align: center;
-            margin-bottom: 50px;
+        @include tab(767px) {
+            font-size: 28px;
+            margin-bottom: 30px;
         }
         
-        @include desc(1200px) {
+        @include desc(1199px) {
             font-size: 36px;
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: 0.03em;
-            text-align: center;
             margin-bottom: 50px;
         }
+
     }
 }
 
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-    @include tab(768px) {
+.team {
+    &-list {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
-    }
     
-    @include desc(1200px) {
-        display: flex;
-        gap: 30px;
-    }
-    &-item {
-        background-color: $main-white-color;
-        width: 450px;
-        
-        @include tab(768px) {
-            // display: flex;
-            // gap: 50px;
+        @include tab(767px) {
+            display: flex;
+            gap: 30px;
         }
+    
+        @include desc(1199px) {
+            display: flex;
+            gap: 30px;
+        }
+        &-item {
+            background-color: $main-white-color;
+           width: 450px;
         
-        @include desc(1200px) {
-            // display: flex;
-            // gap: 50px;
+            @include tab(767px) {
+                width: 354px;
+            }
+        
+            @include desc(1199px) {
+                width: 270px;
+            }
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            color: $main-text-color;
+            text-align: center;
+        }
+        &-desc {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: $second-text-color;
+            margin-top: 10px;
         }
     }
+
+    &-content-wrap {
+        padding: 30px 0;
+    }
+
     &-title {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.1;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1, 2;
         letter-spacing: 0.03em;
-        color: $main-text-color;
-        text-align: center;
     }
-    &-desc {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.1;
-        letter-spacing: 0.03em;
-        text-align: center;
-        color: $second-text-color;
-        margin-top: 10px;
-    }
-}
 
-.team-content-wrap {
-    padding: 30px 0;
-}
-
-.team-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1, 2;
-    letter-spacing: 0.03em;
-}
-
-.team-social-list {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 16px;
-    &-link {
+    &-social-list {
         display: flex;
+        gap: 10px;
         justify-content: center;
-        align-items: center;
-        color: $portfolio-icon;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        &:hover {
-            background-color: $main-blue-color;
-            color: $main-white-color;
+        margin-top: 16px;
+    
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $portfolio-icon;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: $main-blue-color;
+                color: $main-white-color;
+            }
         }
+    
+        &-svg {
+            fill: currentColor;
         }
-     &-svg {
-         fill: currentColor;
-     }
     }
+}
+

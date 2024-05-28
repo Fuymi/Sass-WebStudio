@@ -3,11 +3,11 @@
         padding: 60px 0;
     }
     
-    @include tab(768px) {
+    @include tab(767px) {
         padding: 60px 0;
     }
     
-    @include desc(1200px) {
+    @include desc(1199px) {
         padding: 94px 0;
     }
 }
@@ -18,36 +18,42 @@
     flex-wrap: wrap;
     gap: 30px;
 
-    @include tab(768px) {
-        // padding: 60px 0;
-    }
-    
-    @include desc(1200px) {
+    @include tab(767px) {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    @include desc(1199px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
     }
 
     &-item{
         max-width: 450px;
 
-        @include tab(768px) {
-            // display: flex;
-            // gap: 50px;
+        @include tab(767px) {
+            max-width: 354px;
         }
         
-        @include desc(1200px) {
-            // display: flex;
-            // gap: 50px;
+        @include desc(1199px) {
+            max-width: 270px;
         }
     }
     &-title {
         font-size: 14px;
         font-weight: 700;
-        line-height: 1;
+        line-height: 16.41px;
         letter-spacing: 0.03em;
         color: $main-text-color;
         text-align: center;
+        
+        @include tab(767px) {
+            text-align: left ;
+        }
     }
     &-desc {
         font-size: 14px;
@@ -70,6 +76,14 @@
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;
+
+    @include tab(767px) {
+        width: 354px;
+    }
+    
+    @include desc(1199px) {
+        width: 270px;
+    }
 }
 
 .clock::before {
@@ -83,6 +97,14 @@
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;
+
+    @include tab(767px) {
+        width: 354px;
+    }
+    
+    @include desc(1199px) {
+        width: 270px;
+    }
 }
 
 .desctop::before {
@@ -96,6 +118,14 @@
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;
+
+    @include tab(767px) {
+        width: 354px;
+    }
+    
+    @include desc(1199px) {
+        width: 270px;
+    }
 }
 
 .astronaft::before {
@@ -109,4 +139,12 @@
     height: 120px;
     display: inline-block;
     margin-bottom: 30px;
+
+    @include tab(767px) {
+        width: 354px;
+    }
+    
+    @include desc(1199px) {
+        width: 270px;
+    }
 }
