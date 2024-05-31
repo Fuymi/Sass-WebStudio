@@ -768,6 +768,11 @@ input:focus + svg {
           justify-content: center;
   gap: 10px;
 }
+@media screen and (min-width: 1199px) {
+  .footer-list {
+    margin-right: 93px;
+  }
+}
 .footer-list-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,7 +814,12 @@ input:focus + svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0;
   }
 }
 .footer-form {
@@ -836,7 +846,13 @@ input:focus + svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 12px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .footer-form-title {
@@ -848,6 +864,11 @@ input:focus + svg {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1199px) {
+  .footer-form-title {
+    text-align: left;
+  }
 }
 .footer-form-input {
   outline: none;
@@ -869,7 +890,7 @@ input:focus + svg {
     color: rgb(255, 255, 255);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .footer-form-input {
     outline: none;
     background-color: inherit;
@@ -942,6 +963,7 @@ input:focus + svg {
             align-items: center;
     gap: 10px;
     border-radius: 4px;
+    margin-top: 0;
   }
 }
 .footer-form-svg {
@@ -955,6 +977,12 @@ input:focus + svg {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1199px) {
+  .footer-social-links {
+    margin-bottom: 0;
+  }
+}
+
 .location-link {
   color: rgb(255, 255, 255);
 }
