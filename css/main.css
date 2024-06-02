@@ -454,6 +454,62 @@ input:focus + svg {
   outline-color: rgb(33, 150, 243);
 }
 
+.mob-menu {
+  height: 100vh;
+  padding: 48px 40px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+}
+.mob-menu-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mob-menu-svg {
+  fill: currentColor;
+}
+
+.menu-close-btn {
+  position: fixed;
+  color: rgb(33, 33, 33);
+  background: transparent;
+  top: 10px;
+  right: 10px;
+}
+.menu-close-btn:hover {
+  color: rgb(33, 150, 243);
+}
+
+.nav-menu-list-item {
+  margin-bottom: 32px;
+}
+.nav-menu-list-link {
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgb(33, 33, 33);
+}
+.nav-menu-list-link:hover {
+  color: rgb(33, 150, 243);
+}
+
+.contacts-menu-list {
+  margin-bottom: 64px;
+}
+
 .section-clients {
   padding: 60px 0;
 }
