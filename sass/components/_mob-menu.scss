@@ -47,7 +47,48 @@
 
 .contacts-menu-list{
     margin-bottom: 64px;
-    
+
+    &-item{
+        margin-bottom: 32px;
+
+        &:first-child{
+            font-family: Roboto;
+            font-size: 34px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: $main-blue-color;
+        }
+        &:last-child{
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: $second-text-color;
+            margin: 0;
+        }
+    }
+}
+
+.social-menu-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    &-item{
+        &:not(:last-child){
+            border-right: 1px solid $social-item;
+            padding-right: 10px;
+        }
+    }
+    &-link{
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: $main-blue-color;
+    }
 }
 
 // .is-hidden{
