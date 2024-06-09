@@ -457,12 +457,17 @@ input:focus + svg {
 
 .mob-menu {
   height: 100vh;
+  width: 100vw;
   padding: 48px 40px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: rgb(255, 255, 255);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .mob-menu-container {
   height: 100%;
@@ -487,9 +492,6 @@ input:focus + svg {
   background: transparent;
   top: 10px;
   right: 10px;
-}
-.menu-close-btn:hover {
-  color: rgb(33, 150, 243);
 }
 
 .nav-menu-list-item {
@@ -535,9 +537,6 @@ input:focus + svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 20px;
 }
 .social-menu-list-item:not(:last-child) {
@@ -551,6 +550,17 @@ input:focus + svg {
   letter-spacing: 0.02em;
   text-align: left;
   color: rgb(33, 150, 243);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu.is-hidden {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .section-clients {
