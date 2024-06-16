@@ -169,7 +169,23 @@
                 <div class="section-team-wrap">
                     <ul class="team-list">
                         <li class="team-list-item">
-                            <img src="./img/Igor-min.jpg" alt="Зображення" class="team-list-img" />
+                            <picture>
+
+                                <source
+                                media="(min-width:1200px)"
+                                srcset="./img/igor-desk-webp-1x 1x, ./img/igor-desk-webp-2x 2x, ./img/igor-desk-webp-3x 3x"
+                                type="imege/webp"
+                                />
+
+                                <source media="(min-width:1200px)"
+                                srcset="./img/igor-desk-jpeg-1x 1x, ./img/igor-desk-jpeg-2x 2x, ./img/igor-desk-jpeg-3x 3x" 
+                                type="imege/jpeg"
+                                />
+                                <img src="./igor-mob-jpeg-1x" alt=""
+                                />
+
+                            </picture>
+                            <!-- <img src="./img/Igor-min.jpg" alt="Зображення" class="team-list-img" /> -->
                             <div class="team-content-wrap">
                             <h5 class="team-list-title">Ігор Дем'яненко</h5>
                             <p class="team-list-desc">
