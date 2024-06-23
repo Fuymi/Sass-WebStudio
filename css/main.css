@@ -1304,6 +1304,8 @@ input:focus + svg {
   position: relative;
   color: inherit;
   margin-bottom: 30px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 767px) {
   .portfolio-list-item {
@@ -1313,7 +1315,8 @@ input:focus + svg {
 }
 @media screen and (min-width: 1199px) {
   .portfolio-list-item {
-    width: calc((100% - 60px) / 3);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 .portfolio-list-title {
