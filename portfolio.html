@@ -26,8 +26,7 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-list-item"><a href="./index.html" class="nav-list-link">Студія</a></li>
-                        <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link curent">Портфоліо</a>
-                        </li>
+                        <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link curent">Портфоліо</a></li>
                         <li class="nav-list-item"><a href="" class="nav-list-link">Контакти</a></li>
                     </ul>
                 </nav>
@@ -49,14 +48,44 @@
                         </a>
                     </li>
                 </ul>
-                <button class="nav-btn">
+                <button class="nav-btn menu-open-btn">
                     <svg class="nav-btn-svg" width="24" height="16">
                         <use href="./symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
             </div>
         </div>
-        <div class="mob-menu is-hidden"></div>
+
+        <div class="mob-menu is-hidden">
+            <div class="container mob-menu-container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-btn menu-close-btn">
+                        <svg class="mob-menu-svg" width="29" height="29">
+                            <use href="./symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="nav-menu">
+                        <ul class="nav-menu-list">
+                            <li class="nav-menu-list-item"><a href="" class="nav-menu-list-link">Студія</a></li>
+                            <li class="nav-menu-list-item"><a href="" class="nav-menu-list-link">Портфоліо</a></li>
+                            <li class="nav-menu-list-item"><a href="" class="nav-menu-list-link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="contacts-menu-list">
+                        <li class="contacts-menu-list-item"><a href="" class="contacts-menu-list-link">+38 096 111 11 11</a></li>
+                        <li class="contacts-menu-list-item"><a href="" class="contacts-menu-list-link">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="social-menu-list">
+                        <li class="social-menu-list-item"><a href="" class="social-menu-list-link">Instagram</a></li>
+                        <li class="social-menu-list-item"><a href="" class="social-menu-list-link">Twitter</a></li>
+                        <li class="social-menu-list-item"><a href="" class="social-menu-list-link">Facebook</a></li>
+                        <li class="social-menu-list-item"><a href="" class="social-menu-list-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -423,7 +452,42 @@
                     <li class="portfolio-list-item">
                         <a href="" class="portfolio-list-link">
                             <div class="img-wrap">
-                                <img src="./img/Проєкт LAB-min.png" alt="Зображення" class="portfolio-list-img">
+
+                                <picture>
+                                    <source 
+                                    media="(min-width:1200px)"
+                                    srcset="./img/portfolio/Lab/desk/webp/Lab-desk-webp-1x.webp 1x, ./img/portfolio/Lab/desk/webp/Lab-desk-webp-2x.webp 2x, ./img/portfolio/Lab/desk/webp/Lab-desk-webp-3x.webp"
+                                    type="image/webp" 
+                                    />
+                                    <source 
+                                    media="(min-width:1200px)"
+                                    srcset="./img/portfolio/Lab/desk/jpg/Lab-desk-jpg-1x.jpg 1x, ./img/portfolio/Lab/desk/jpg/Lab-desk-jpg-2x.jpg 2x, ./img/portfolio/Lab/desk/jpg/Lab-desk-jpg-3x.jpg"
+                                    type="image/jpeg" 
+                                    />
+                                    <source 
+                                    media="(min-width:768px)"
+                                    srcset="./img/portfolio/Lab/tab/webp/Lab-tab-webp-1x.webp 1x, ./img/portfolio/Lab/tab/webp/Lab-tab-webp-2x.webp 2x, ./img/portfolio/Lab/tab/webp/Lab-tab-webp-3x.webp"
+                                    type="image/webp" 
+                                    />
+                                    <source 
+                                    media="(min-width:768px)"
+                                    srcset="./img/portfolio/Lab/tab/jpg/Lab-tab-jpg-1x.jpg 1x, ./img/portfolio/Lab/tab/jpg/Lab-tab-jpg-2x.jpg 2x, ./img/portfolio/Lab/tab/jpg/Lab-tab-jpg-3x.jpg"
+                                    type="image/jpeg" 
+                                    />
+                                    <source 
+                                    media="(max-width:767px)"
+                                    srcset="./img/portfolio/Lab/mob/webp/Lab-mob-webp-1x.webp 1x, ./img/portfolio/Lab/mob/webp/Lab-mob-webp-2x.webp 2x, ./img/portfolio/Lab/mob/webp/Lab-mob-webp-3x.webp"
+                                    type="image/webp" 
+                                    />
+                                    <source 
+                                    media="(max-width:767px)"
+                                    srcset="./img/portfolio/Lab/mob/jpg/Lab-mob-jpg-1x.jpg 1x, ./img/portfolio/Lab/mob/jpg/Lab-mob-jpg-2x.jpg 2x, ./img/portfolio/Lab/mob/jpg/Lab-mob-jpg-3x.jpg"
+                                    type="image/jpeg" 
+                                    />
+                                    <img src="./img/portfolio/Lab/mob/jpg/Lab-mob-jpg-1x.jpg" alt="Зображення" width="450" />
+                                </picture>
+
+                                <!-- <img src="./img/Проєкт LAB-min.png" alt="Зображення" class="portfolio-list-img"> -->
                                 <p class="portfolio-list-subtext">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -438,8 +502,42 @@
                     <li class="portfolio-list-item">
                         <a href="" class="portfolio-list-link">
                             <div class="img-wrap">
-                                <img src="./img/Growing Business-min.png" alt="Зображення"
-                                    class="portfolio-list-img">
+
+                                <picture>
+                                    <source 
+                                    media="(min-width:1200px)"
+                                    srcset="./img/portfolio/Grow/desk/webp/Grow-desk-webp-1x.webp 1x, ./img/portfolio/Grow/desk/webp/Grow-desk-webp-2x.webp 2x, ./img/portfolio/Grow/desk/webp/Grow-desk-webp-3x.webp"
+                                    type="image/webp" 
+                                    />
+                                    <source 
+                                    media="(min-width:1200px)"
+                                    srcset="./img/portfolio/Grow/desk/jpg/Grow-desk-jpg-1x.jpg 1x, ./img/portfolio/Grow/desk/jpg/Grow-desk-jpg-2x.jpg 2x, ./img/portfolio/Grow/desk/jpg/Grow-desk-jpg-3x.jpg"
+                                    type="image/jpeg" 
+                                    />
+                                    <source 
+                                    media="(min-width:768px)"
+                                    srcset="./img/portfolio/Grow/tab/webp/Grow-tab-webp-1x.webp 1x, ./img/portfolio/Grow/tab/webp/Grow-tab-webp-2x.webp 2x, ./img/portfolio/Grow/tab/webp/Grow-tab-webp-3x.webp"
+                                    type="image/webp" 
+                                    />
+                                    <source 
+                                    media="(min-width:768px)"
+                                    srcset="./img/portfolio/Grow/tab/jpg/Grow-tab-jpg-1x.jpg 1x, ./img/portfolio/Grow/tab/jpg/Grow-tab-jpg-2x.jpg 2x, ./img/portfolio/Grow/tab/jpg/Grow-tab-jpg-3x.jpg"
+                                    type="image/jpeg" 
+                                    />
+                                    <source 
+                                    media="(max-width:767px)"
+                                    srcset="./img/portfolio/Grow/mob/webp/Grow-mob-webp-1x.webp 1x, ./img/portfolio/Grow/mob/webp/Grow-mob-webp-2x.webp 2x, ./img/portfolio/Grow/mob/webp/Grow-mob-webp-3x.webp"
+                                    type="image/webp" 
+                                    />
+                                    <source 
+                                    media="(max-width:767px)"
+                                    srcset="./img/portfolio/Grow/mob/jpg/Grow-mob-jpg-1x.jpg 1x, ./img/portfolio/Grow/mob/jpg/Grow-mob-jpg-2x.jpg 2x, ./img/portfolio/Grow/mob/jpg/Grow-mob-jpg-3x.jpg"
+                                    type="image/jpeg" 
+                                    />
+                                    <img src="./img/portfolio/Grow/mob/jpg/Grow-mob-jpg-1x.jpg" alt="Зображення" width="450" />
+                                </picture>
+
+                                <!-- <img src="./img/Growing Business-min.png" alt="Зображення" class="portfolio-list-img"> -->
                                 <p class="portfolio-list-subtext">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
