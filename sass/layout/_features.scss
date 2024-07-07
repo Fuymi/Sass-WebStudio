@@ -68,7 +68,7 @@
 .antena::before {
     content: "";
     background-color: $background-color;
-    background-image: url("/img/antena.png");
+    background-image: url("../img/antena.png");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -89,7 +89,7 @@
 .clock::before {
     content: "";
     background-color: $background-color;
-    background-image: url("/img/clock.png");
+    background-image: url("../img/clock.png");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -110,7 +110,7 @@
 .desctop::before {
     content: "";
     background-color: $background-color;
-    background-image: url("/img/desctop.png");
+    background-image: url("../img/desctop.png");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -131,7 +131,7 @@
 .astronaft::before {
     content: "";
     background-color: $background-color;
-    background-image: url("/img/astronaft.png");
+    background-image: url("../img/astronaft.png");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;

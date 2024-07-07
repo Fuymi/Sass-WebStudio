@@ -6,16 +6,10 @@
 
     @include tab(767px) {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
     }
     
-    @include desc(1199px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
     &-item {
         max-width: 450px;
         border: 1px solid $second-page-container-bg;
@@ -23,16 +17,13 @@
         position: relative;
         color: inherit;
         margin-bottom: 30px;
-        flex-basis: calc((100% - 30px) / 2);
 
         @include tab(767px) {
-            width: 354px;
-            margin: 0;
+            flex-basis: calc((100% - 30px) / 2);
         }
         
         @include desc(1199px) {
-            // width: calc((100% - 60px)/3);
-            flex-basis: calc((100% - 90px) / 4);
+            flex-basis: calc((100% - 60px) / 3);
         }
     }
     &-title {

@@ -754,7 +754,7 @@ input:focus + svg {
 .antena::before {
   content: "";
   background-color: rgb(245, 244, 250);
-  background-image: url("/img/antena.png");
+  background-image: url("../img/antena.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -777,7 +777,7 @@ input:focus + svg {
 .clock::before {
   content: "";
   background-color: rgb(245, 244, 250);
-  background-image: url("/img/clock.png");
+  background-image: url("../img/clock.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -800,7 +800,7 @@ input:focus + svg {
 .desctop::before {
   content: "";
   background-color: rgb(245, 244, 250);
-  background-image: url("/img/desctop.png");
+  background-image: url("../img/desctop.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -823,7 +823,7 @@ input:focus + svg {
 .astronaft::before {
   content: "";
   background-color: rgb(245, 244, 250);
-  background-image: url("/img/astronaft.png");
+  background-image: url("../img/astronaft.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -1278,20 +1278,6 @@ input:focus + svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .portfolio-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
@@ -1304,19 +1290,17 @@ input:focus + svg {
   position: relative;
   color: inherit;
   margin-bottom: 30px;
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 767px) {
   .portfolio-list-item {
-    width: 354px;
-    margin: 0;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1199px) {
   .portfolio-list-item {
-    -ms-flex-preferred-size: calc((100% - 90px) / 4);
-        flex-basis: calc((100% - 90px) / 4);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 .portfolio-list-title {
