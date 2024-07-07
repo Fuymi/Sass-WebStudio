@@ -1143,8 +1143,8 @@ input:focus + svg {
 
 .section-hero {
   background-color: rgb(47, 48, 58);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/Bg_hero-min.png");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/Bg_hero-min.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/Bg_hero-min.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Bg_hero-min.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1287,7 +1287,6 @@ input:focus + svg {
   max-width: 450px;
   border: 1px solid rgb(238, 238, 238);
   outline: 1px solid rgb(255, 255, 255);
-  position: relative;
   color: inherit;
   margin-bottom: 30px;
 }
